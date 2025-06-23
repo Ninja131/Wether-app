@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-weight: 600;
+}
+
+body{
+    font-family: "roboto", sans-serif;
+    background: url(/assets/bg.png);
+    width: 100%;
+    height: 100dvh;  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
+   
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    background: rgb(0,0,0,0.15);
+    backdrop-filter: blur(15px);
+}
+
+/* UTILITY CLASSES */
+.fontRegular{
+    font-weight: 400;
+    color: rgba(240, 248, 255, 0.781);
+}
+/* UTILITY CLASSES */
+
+
+
+
+
+
+.main_contaier{
+    width: 350px;
+    height: 520px;
+    z-index: 1;
+    background: linear-gradient(45deg, rgb(0,0,0,0.15),rgb(255,255,255,0.15));
+    border-radius: 24px;
+    backdrop-filter: blur(100px);
+    padding: 24px;
+}
+
+
+/* search input */
+.input_container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 24PX;
+}
+.city_input{
+    width: 100%;
+    padding: 18px 16px 16px 16px;
+    border-radius: 100px;
+    border: 3px solid transparent;
+    background-color: rgb(0,0,0,0.15);
+    font-weight: 200;
+    outline: none;
+    line-height: 100%;
+    color: aliceblue;
+    font-size: 14px;
+}
+.city_input:focus{
+    border: 3px solid rgb(0,0,0,0.15);
+}
+.city_input::placeholder{
+    color: rgba(240, 248, 255, 0.392);
+    font-size: 16px;
+
+
+}
+
+.Searchbtn{
+    position: absolute;
+    top: 52%;
+    right: 16px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(249, 251, 254);
+    cursor: pointer;
+}
+
+/* search input ends */
+
+
+
+/* SECTION WEATHER INFO STARTS*/
+.weather_info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.location_date_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* SECTION WEATHER INFO ENDS */
+
+
+
+/* SECTION weatherSummary_container */
+
+.weatherSummary_container{
+    /* border: solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+.Weatherimg{
+    height: 150px;
+    width: 150px;
+}
+
+.weatherSummary_info{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    
+}
+
+
+.weatherCondition_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.condition_item{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.condition_item span{
+    font-size: 32px;
+}
+
+
+
+
+.forecastItem_container{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 16px 0px 0px 0px;
+    overflow: scroll;
+    overflow-y: hidden;
+
+
+}
+
+.forecastItem_container::-webkit-scrollbar{
+    height: 8px;
+}
+
+.forecastItem_container::-webkit-scrollbar-track{
+    background-color: rgb(0,0,0,0.15);
+    border-radius: 99px;
+}
+.forecastItem_container::-webkit-scrollbar-thumb{
+    background-color: rgb(0,0,0,0.15);
+    border-radius: 99px;
+}
+
+.forecast_item{
+    background-color: rgb(255,255,255,0.15);
+    padding: 12px 15px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.2s background;
+   
+}
+.forecast_item:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.forecastItem_image{
+    /* border: solid red; */
+    width: 52px;
+    height: 52px;
+}
+/* SECTION weatherSummary_container ENDS*/
+
+
+/*  SECTION MESSAGE */
+
+.searchCity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-top: 55px;
+
+}
+.searchCity img{
+    height: 180px;
+    width: 180px;
+}
+
+
+
+.notFound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    margin-top: 55px;
+
+}
+
+.notFound img{
+    height: 180px;
+    width: 180px;
+}
+
+
+
+/*  SECTION MESSAGE ENDS */
+
+
+
+
+.hide{
+    display: none;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    
+   <main class="main_contaier">
+    
+    <header class="input_container">
+
+        <input class="city_input" type="text" placeholder="Search by city">
+        <button class="Searchbtn">
+            <span class="material-symbols-outlined">
+              search
+            </span>
+
+        </button>
+    </header>
+
+    <section class="weather_info hide">
+        <div class="location_date_container">
+
+            <div class="location">
+            <span class="material-symbols-outlined">
+              location_on
+            </span>
+            <h4 class="country_txt">India</h4>
+            </div>
+            
+            <h5 class="currentdate_txt fontRegular">Wed,07 Aug</h5>
+        
+        </div>
+
+        <div class="weatherSummary_container">
+                <img class="Weatherimg"  src="/assets/weather/Clouds.svg" alt="">
+                <div class="weatherSummary_info">
+                    <h1 class="temprature">100°C</h1>
+                    <h3 class="condition_txt fontRegular">Clouds</h3>
+                </div>
+        </div>
+
+
+
+        <div class="weatherCondition_container">
+            <div class="condition_item">
+                <span class="material-symbols-outlined">
+                   water_drop
+                </span>
+                <div class="condition_info">
+                    <h5 class="fontRegular">Humidity</h5>
+                    <h5 class="humidityValue_txt">55%</h5>
+                </div>
+            </div>
+
+            <div class="condition_item">
+                <span class="material-symbols-outlined">
+                   airwave
+                </span>
+                <div class="condition_info">
+                    <h5 class="fontRegular">Wind Speed</h5>
+                    <h5 class="windValue_txt">2 M/s</h5>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="forecastItem_container">
+
+            <div class="forecast_item">
+                <h5 class="forecastItem_data fontRegular">05 Aug</h5>
+                <img src="/assets/weather/ThunderStorm.svg" class="forecastItem_image">
+                <h5 class="forecastItem_temp">29 °C</h5>
+            </div>
+
+            <div class="forecast_item">
+                <h5 class="forecastItem_data fontRegular">05 Aug</h5>
+                <img src="/assets/weather/ThunderStorm.svg" class="forecastItem_image">
+                <h5 class="forecastItem_temp">29 °C</h5>
+            </div>
+
+            <div class="forecast_item">
+                <h5 class="forecastItem_data fontRegular">05 Aug</h5>
+                <img src="/assets/weather/ThunderStorm.svg" class="forecastItem_image">
+                <h5 class="forecastItem_temp">29 °C</h5>
+            </div>
+
+            <div class="forecast_item">
+                <h5 class="forecastItem_data fontRegular">05 Aug</h5>
+                <img src="/assets/weather/ThunderStorm.svg" class="forecastItem_image">
+                <h5 class="forecastItem_temp">29 °C</h5>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="searchCity">
+        <img src="/assets/message/SearchCity.svg">
+         <h1>Search City</h1>
+         <h4 class="fontRegular"> Find out the weather condition of your area</h4>
+    </section>
+
+
+     <section class="notFound hide">
+        <img  src="/assets/message/Error.svg">
+         <h1>Search City</h1>
+         <h4 class="fontRegular"> Find out the weather condition of your area</h4>
+    </section>
+
+
+   </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
